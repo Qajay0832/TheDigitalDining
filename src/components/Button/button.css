@@ -1,0 +1,30 @@
+.primaryBtn {
+    border: 0.125rem solid black;
+    padding: 0.188rem 1.063rem;
+    border-radius: 0.938rem;
+    width: max-content;
+    z-index: 1;
+}
+
+.primaryBtn:hover {
+    background-color: var(--green);
+    color: var(--white);
+    border-color: var(--green);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.secondaryBtn {
+    border-color: var(--green);
+    background-color: var(--green);
+    color: var(--white);
+    padding: 0.875rem 1.188rem;
+    border-radius: 2.2rem;
+}
+
+.secondaryBtn:hover {
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--green);
+
+}

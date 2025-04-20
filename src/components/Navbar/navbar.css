@@ -1,0 +1,177 @@
+.navContainer {
+    position: relative;
+    width: 100%;
+}
+
+.navbarContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    padding: var(--padding);
+}
+
+.logo {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 1.2rem;
+}
+
+.navRoutes {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.navRoute {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.navRoute:hover{
+    transform: scale(1.1);
+}
+
+.menuRoute {
+    color: var(--orange);
+}
+
+
+.sidebarMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: var(--white);
+    border-right: 0.125rem solid var(--orange);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    padding: 2rem 0;
+}
+
+.menuBtn {
+    display: none;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1380px) {
+
+
+    .logo {
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+
+    .navRoutes {
+        gap: 2.188rem;
+    }
+
+    .navRoute {
+        gap: 0.625rem;
+    }
+
+}
+
+@media (min-width: 1070px) and (max-width:1216px) {
+
+
+    .logo {
+        font-size: 2.6rem;
+        font-weight: 700;
+    }
+
+    .navRoutes {
+        gap: 1.625rem;
+    }
+
+    .navRoute {
+        gap: 0.5rem;
+    }
+
+}
+
+@media (min-width: 850px) and (max-width:1069px) {
+
+
+    .logo {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .navRoutes {
+        gap: 1.4rem;
+    }
+
+    .navRoute {
+        gap: 0.4rem;
+    }
+}
+
+@media (min-width: 650px) and (max-width:849px) {
+
+
+    .logo {
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    .navRoutes {
+        gap: 1.2rem;
+    }
+
+    .navRoute {
+        gap: 0.3rem;
+    }
+}
+
+@media (max-width:649px) {
+
+    .navDirection {
+        padding: 1.75rem 2.2rem;
+        flex-direction: row-reverse;
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .navRoutes {
+        display: none;
+    }
+
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .displaySidebar {
+        opacity: 1;
+        /* Make it visible */
+        position: fixed;
+        transform: translateX(0);
+    }
+
+    .displayLogo {
+        display: none;
+    }
+
+
+
+
+}
